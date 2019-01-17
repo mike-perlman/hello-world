@@ -1,0 +1,31 @@
+This zip contains proto submission in C (C99). 
+
+I've compiled and run this under the following:
+  win64:  Eclipse C/C++ - MINGW 6.3 - gcc 6.3 
+  Red Hat: AWS AMI 2018.03.0.20181129 x86_64 HVM gp2) :  gcc 7.2 
+ 
+ 
+Build instructions:  
+	1) gcc flags:  -c -g3 -O0 -fmessage-length=0 -std=c99 -Wall -o   (add -lm for linux linking)
+	2a) Import these into an Eclipse C/C++ project, it should locate the files as part of its build. 
+	2b) copy to a *nix box, run src/build.sh.   'mps7'  is the executable.
+	3) Source breakdown:  
+		--main.c is just that.
+		--mps7.h defines the records, etc.
+		--mps7.c contains the bulk of the logic.
+		--bitsbytes.c contains utility functions.
+		
+*********************************
+Usage:  mps7 {ieeefp}
+	--Finds and processes txnlog.dat in the current directory, per instructions.
+	--Writes individual record details to stdout, as processed.
+    --Sanity-checks record counts listed in header vs. actual records found.
+
+Parameters
+	ieeefp (optional):  treat amounts as IBM-formatted, convert to IEEE 754 on read.
+*********************************
+
+Notes:	
+    --The instructions say 'mainframe', and the ints were big-endian, so the floats could be IBM's format.  They might be one of the VMS formats, but I'm out of time to study and roll those.  I added this option for switching between IBM/IEEE.  The switching code is adapted from Python:NumPy's ibm2ieee package.
+	--It looks like the account in question has offsetting debit and credit xacts, so the net balance is 0.
+	

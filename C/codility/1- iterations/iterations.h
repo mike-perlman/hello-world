@@ -1,0 +1,2 @@
+int binaryGap(int N);
+

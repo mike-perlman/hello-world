@@ -1,0 +1,18 @@
+Perl version:  5.20
+
+Running:  
+	perl .\src\main\perl\FindSLCSPByZip.pl
+
+This looks for input files in the current dir by default, overridden by the following full-path env vars, if present:
+    SLCSP_GEO_INFO      -> ${wherever}/zips.csv
+    SLCSP_PLAN_INFO     -> ${wherever}/plans.csv
+    SLCSP_SEARCH_ZIPS   -> ${wherever}/slcsp.csv
+
+It logs to stderr, enabled by instance (global for perl) vars.
+
+My general approach is to match zip -> state, area -> rate lists, using the contents of slcsp.csv to filter the zips file on import.
+
+Perl notes:
+  --stderr logging is enabled by 5 vars, defined at the top of the program.
+  --Uses printf formatting to round off the floats.
+
