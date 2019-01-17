@@ -1,5 +1,9 @@
-# hello-world
-intro repo
+## Sample snippets and homework
 
-here are some changes.
-and some more changes.
+This set of samples and snippets is organized by language, organization, with
+individual problems or packages broken out from there.  
+
+Languages:  C,Perl,Java,Ruby
+Organizations: adhoc, codility
+
+e.g. perl/adhoc/proto
