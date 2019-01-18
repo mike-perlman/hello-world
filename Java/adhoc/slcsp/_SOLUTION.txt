@@ -8,6 +8,8 @@ It looks for input files in the current dir by default, overridden by the follow
 
 I've included a basic ant file; it dumps to .\target\dist\lib\slcsp-${today}.jar.
 
+There's also a test class (JUnit 4) for some of the internal methods.
+
 Running:
 	1) eclipse project build/run from UI.  
 	2) java -jar .\target\dist\lib\slcsp.jar
