@@ -7,7 +7,7 @@ Each subject contains a brief description (SCENARIO.md, PROBLEM*.txt). My notes,
 
 ## Listing by Source + subject: 
 ### adhoc 
-(https://homework.adhoc.team/assignments/)  Scenario-based questions
+(https://homework.adhoc.team/assignments/)  Scenario-based questions:
  - proto (C) : read "mainframe" style transactions from a file.
  - slcsp (Java,Perl) : merge/filter multiple data sets, find [S]econd-[L]owest [C]ost [S]ilver [P]lan  rate.
  - dogLicense (text) : An analysis/brainstorming exercise.
