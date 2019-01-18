@@ -1,0 +1,29 @@
+This java solution runs on: 
+	Java 1.8.0.152:     src/main/java/adhoc_slcsp/FindSLCSPByZip.
+
+It looks for input files in the current dir by default, overridden by the following full-path env vars, if present:
+    SLCSP_GEO_INFO      -> ${wherever}/zips.csv
+    SLCSP_PLAN_INFO     -> ${wherever}/plans.csv
+    SLCSP_SEARCH_ZIPS   -> ${wherever}/slcsp.csv
+
+I've included a basic ant file; it dumps to .\target\dist\lib\slcsp-${today}.jar.
+
+Running:
+	1) eclipse project build/run from UI.  
+	2) java -jar .\target\dist\lib\slcsp.jar
+	
+
+Approach
+I matched  zip -> (state, area) -> [rates], using the contents of slcsp.csv to filter the zips file on import.
+They both log internal messages to stderr, enabled by instance (global for perl) vars.
+
+Java notes:
+  --stderr logging is enabled by environment variable CONFIG_LOG_ERR.
+  --Subpackages include:
+     --pojo:  data objects
+     --csv:   interface + classes which handle the bulk of the work.
+     --util:  static 'helper' class.
+  --adhoc_slscp.TestSlcsp contains a few JUnit tests I used for internals.
+  --Converts + rounds values to integer pennies, prints as currency.
+  --Removes map entries with single rate values.
+
