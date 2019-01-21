@@ -4,11 +4,11 @@ Primarily, Eclipse (Java, C).   For languages like Perl and Ruby, and any tinker
 
 
 ### What challenges do you foresee as a remote programmer and how do you intend to address them?
-Having been remote for most of my career...
+Having been remote for most of my career, I've seen the following challenges:
 
-1) Connectivity.  Comms redundancy (1 cell, 1 Fiber, 1 DSL).
-2) Environment control:  short-term (noise/temp), long-term (stagnation).  Workspace redundancy (in and out of home).  
-3) Coordination (shared between remote and remote teams) - Match the method(s) to the purpose. Use synchronous methods (e.g. Phone/video) for Q&A and broadcast purposes.  Use asynchronous (chats/emails/forums) for goals which require persistence, combine the two as needed (e.g. troubleshooting, pairing, etc.)
+1) Connectivity.  Addressed by:  comms redundancy (2x cell, 1 Fiber, 1 DSL; ideally multiple carriers).
+1) Environment control.  In the short term, that means controlling noise/temp; long-term, that means combatting stagnation.  Addressed by : Workspace redundancy.  I have multiple spaces at home, and several nearby public spaces I can use.  I haven't tried rental workspaces yet, but there are several nearby I can leverage if needed.
+1) Team Coordination/Communication. This issue comes up with full-remote and distributed-office teams.  Addressed by:  proper use of comms channels.  Match the method type(s) to the purpose. Use synchronous methods (e.g. Phone/video) for Q&A and broadcasts.  Use asynchronous (chats/emails/forums) where multiple/parallel contributors are involved.  Combine the two as needed (e.g. troubleshooting, pairing, etc.)
 
 
 ### Explain what version control is as if you were speaking with a non-programmer professional. Then explain your version control system of choice, including its successes and its drawbacks.
