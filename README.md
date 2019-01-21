@@ -6,6 +6,9 @@ individual problems or packages broken out from there.  Note:  I've built and su
 Each subject contains a brief description (SCENARIO.md, PROBLEM*.txt). My notes, when present, are found in SOLUTION*.txt. 
 
 ## Listing by Source + subject: 
+### general discussion
+ - Q&A (text):  answers to various interview questions.
+
 ### adhoc 
 (https://homework.adhoc.team/assignments/)  Scenario-based questions:
  - proto (C) : read "mainframe" style transactions from a file.
