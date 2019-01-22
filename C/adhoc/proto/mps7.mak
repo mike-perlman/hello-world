@@ -3,7 +3,7 @@ SHELL = /bin/sh
 .SUFFIXES: .c .o
 CFLAGS = -c -g3 -O0 -fmessage-length=0 -std=c99 -Wall
 LFLAGS = -g3 -std=c99 -O0 -fmessage-length=0 -Wall -lm
-srcdir = src
+srcdir = .
 CC = gcc
 
 mps7: bitsbytes.o mps7.o main.o
